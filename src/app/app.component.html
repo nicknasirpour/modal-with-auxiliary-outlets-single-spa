@@ -1,0 +1,8 @@
+<a [routerLink]="['page1']">Page 1</a><br>
+&nbsp;&nbsp;<a [routerLink]="['/page1', { outlets: { 'modal': ['a'] }}]">Modal A</a><br>
+&nbsp;&nbsp;<a [routerLink]="['/page1', { outlets: { 'modal': ['b'] }}]">Modal B</a><br>
+<a [routerLink]="['page2']">Page 2</a><br>
+<a [routerLink]="['random']">404</a>
+
+<h1>App component</h1>
+<router-outlet></router-outlet>

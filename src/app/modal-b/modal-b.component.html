@@ -1,0 +1,11 @@
+<app-modal (modalClose)="modalClose($event)" #modal="modal" page="page1">
+  <div modal-header>Modal B</div>
+  <div modal-body>
+    <p>Some text in the Modal Body</p>
+    <p>Some other text...</p>
+    <p><button (click)="modal.closeModal({ submitted: true })">Submit</button></p>
+  </div>
+  <div modal-footer>
+    <h3>Modal Footer</h3>
+  </div>
+</app-modal>

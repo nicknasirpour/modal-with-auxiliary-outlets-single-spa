@@ -1,0 +1,11 @@
+<app-modal (modalClose)="modalClose($event)" #modal="modal" page="page1">
+  <div modal-header>Modal A</div>
+  <div modal-body>
+    <p>A modal with nested routes</p>
+    <p><button (click)="modal.closeModal({ submitted: true })">Submit</button></p>
+    <router-outlet></router-outlet>
+  </div>
+  <div modal-footer>
+    <h3>Modal Footer</h3>
+  </div>
+</app-modal>
